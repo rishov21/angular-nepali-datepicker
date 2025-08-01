@@ -45,6 +45,15 @@ Make sure the following are available in your project:
 These are usually already installed in any standard Angular app.
 
 ### ✨ Features
+- 📅 Nepali Date Support: Handle dates as both JavaScript objects and strings seamlessly.
+- 🔀 Dual Build Support: Compatible with both Angular View Engine and Ivy compilation modes.
+- 🔄 Date Conversion: Easily convert dates between Bikram Sambat (BS) and Gregorian (AD) calendars.
+- 🛠️ Custom Date Formats: Flexible configuration to display dates in your preferred formats.
+- ✅ Angular Forms Integration: Full support for both reactive and template-driven forms.
+- ⚙️ Additional Utilities: Includes handy functions like number-to-word conversion, Unicode handling, and more.
+- 🎯 Easy to Use: Designed with simplicity in mind for quick integration and minimal setup.
+- 📱 Responsive & Lightweight: Optimized for performance and mobile-friendly design with Dark mode support
+- 🔧 Well-Maintained: Regular updates and active support to keep your app running smoothly.
 
 <a href="https://yourwebsite.com/docs#props" style="color:#007acc;font-weight:bold;font-size:16px;" target="_blank">
     🌐 View Documentation
