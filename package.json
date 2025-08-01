@@ -1,6 +1,6 @@
 {
   "name": "@rishovt/angular-nepali-datepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight Angular wrapper and fully customizable, non-typeable Nepali datepicker component for Angular with support for Unicode-rendered Nepali dates, BS↔AD conversion, and flexible date formats. Ideal for forms requiring calendar-based input with native Nepali script display.",
   "author": "Rishov Thapa Chhetri <rishov096@gmail.com>",
   "license": "MIT",

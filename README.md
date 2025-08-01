@@ -79,13 +79,13 @@ export class AppModule {}
 3. 🧩 Component Usage
 
 ```html
-<angular-nepali-datepicker
+<rtc-nepali-datepicker
   *ngIf="datepickerOptions"
   [options]="datepickerOptions"
   [value]="selectedDate"
   [pickerId]="inputId"
   (dateChange)="onDateSelect($event)">
-</angular-nepali-datepicker>
+</rtc-nepali-datepicker>
 ```
 ```ts
 inputId = 'nepali-datepicker'; // unique id for the datepicker, recommended to append with nepali-datepicker + randomId
