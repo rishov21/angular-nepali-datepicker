@@ -1,0 +1,72 @@
+{
+  "name": "@rishovt/angular-nepali-datepicker",
+  "version": "1.0.0",
+  "description": "A lightweight Angular wrapper and fully customizable, non-typeable Nepali datepicker component for Angular with support for Unicode-rendered Nepali dates, BS↔AD conversion, and flexible date formats. Ideal for forms requiring calendar-based input with native Nepali script display.",
+  "author": "Rishov Thapa Chhetri <rishov096@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bump:version": "node bumpVersion.js",
+    "build:ve": "ng build angular-nepali-datepicker-ve",
+    "build:ivy": "ng build angular-nepali-datepicker",
+    "copy:postinstall": "node copy-postinstall.js",
+    "build:all": "npm run bump:version && npm run build:ve --no-cache && npm run build:ivy --no-cache && npm run copy:postinstall --no-cache",
+    "test": "ng test",
+    "prepublishOnly": "npm run build:all",
+    "postinstall": "node dist/angular-nepali-datepicker/postinstall.js"
+  },
+  "keywords": [
+    "angular",
+    "nepali-datepicker",
+    "bikram-sambat",
+    "date-picker",
+    "unicode-nepali-datepickr",
+    "nepali-datepicker-angular-wrapper",
+    "BS-AD-AD-BS-conversion",
+    "angular-nepali-calendar"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "private": false,
+  "files": [
+    "dist/angular-nepali-datepicker/angular-nepali-datepicker-ve",
+    "dist/angular-nepali-datepicker/angular-nepali-datepicker-ivy",
+    "dist/angular-nepali-datepicker/postinstall.js",
+    "dist/angular-nepali-datepicker/assets",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "tslib": "^2.3.0",
+    "@angular/animations": "~12.2.0",
+    "@angular/common": "~12.2.0",
+    "@angular/compiler": "~12.2.0",
+    "@angular/core": "~12.2.0",
+    "@angular/forms": "~12.2.0",
+    "@angular/platform-browser": "~12.2.0",
+    "@angular/platform-browser-dynamic": "~12.2.0",
+    "@angular/router": "~12.2.0",
+    "@angular-devkit/build-angular": "~12.2.18",
+    "@angular/cli": "~12.2.18",
+    "@angular/compiler-cli": "~12.2.0",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^12.1.1",
+    "typescript": "~4.3.5"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishov21/angular-nepali-datepicker.git"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/angular-nepali-datepicker-ve",
+    "target": "es2015",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": [],
+    "lib": ["dom", "es2018"]
+  },
+  "angularCompilerOptions": {
+    "enableIvy": false,
+    "compilationMode": "full"
+  },
+  "exclude": ["src/test.ts", "**/*.spec.ts"]
+}

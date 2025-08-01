@@ -1,0 +1,9 @@
+node_modules
+src
+projects
+tests
+*.spec.ts
+angular.json
+tsconfig.json
+bumpVersion.js
+copy-postinstall.js
