@@ -50,7 +50,7 @@ export class RtcNepaliDatepickerService {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = `${this.basePath}/nepali.datepicker.v3.0.6.min.css`;
+        link.href = `${this.basePath}/nepali.datepicker.v1.0.3.min.css`;
         link.onload = () => {
           console.log('CSS loaded successfully');
           this.loadNepaliDatePicker(resolve, reject);
@@ -67,7 +67,7 @@ export class RtcNepaliDatepickerService {
 
   private loadNepaliDatePicker(resolve: () => void, reject: (reason?: any) => void): void {
     const script = document.createElement('script');
-    script.src = `${this.basePath}/nepali.datepicker.v3.0.6.min.js`;
+    script.src = `${this.basePath}/nepali.datepicker.v1.0.3.min.js`;
     script.type = 'text/javascript';
     script.onload = () => {
       console.log('Nepali Datepicker JS loaded successfully');

@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const newVersion = "1.0.2"
+const oldVersion = '1.0.2';
+const newVersion = "1.0.3"
 
 if (!newVersion) {
   console.error('❌ Please provide a version number, e.g., node postinstall.js 1.0.2');
@@ -59,3 +60,46 @@ if (fs.existsSync(readmePath)) {
     console.warn('⚠️ Version badge not found in README.md');
   }
 }
+
+const assetsPathIvy = path.resolve(__dirname, '../angular-nepali-datepicker/projects/angular-nepali-datepicker/assets');
+const assetsPathVE = path.resolve(__dirname, '../angular-nepali-datepicker/projects/angular-nepali-datepicker-ve/assets');
+function renameAssetsIn(dir) {
+  const cssOld = path.join(dir, `nepali.datepicker.v${oldVersion}.min.css`);
+  const cssNew = path.join(dir, `nepali.datepicker.v${newVersion}.min.css`);
+  const jsOld = path.join(dir, `nepali.datepicker.v${oldVersion}.min.js`);
+  const jsNew = path.join(dir, `nepali.datepicker.v${newVersion}.min.js`);
+
+  if (fs.existsSync(cssOld)) fs.renameSync(cssOld, cssNew);
+  if (fs.existsSync(jsOld)) fs.renameSync(jsOld, jsNew);
+}
+
+renameAssetsIn(assetsPathIvy);
+renameAssetsIn(assetsPathVE);
+
+
+
+const serviceFilePathIvy = path.resolve(__dirname, '../angular-nepali-datepicker/projects/angular-nepali-datepicker/src/lib/angular-nepali-datepicker.service.ts');
+const serviceFilePathVe = path.resolve(__dirname, '../angular-nepali-datepicker/projects/angular-nepali-datepicker-ve/src/lib/angular-nepali-datepicker.service.ts');
+
+
+function updateServiceFileVersion(filePath, oldVersion, newVersion) {
+  if (!fs.existsSync(filePath)) {
+    console.error(`❌ File not found: ${filePath}`);
+    return;
+  }
+
+  let content = fs.readFileSync(filePath, 'utf-8');
+
+  const regex = new RegExp(`nepali\\.datepicker\\.v${oldVersion}\\.min\\.(css|js)`, 'g');
+  const updatedContent = content.replace(regex, `nepali.datepicker.v${newVersion}.min.$1`);
+
+  if (content !== updatedContent) {
+    fs.writeFileSync(filePath, updatedContent, 'utf-8');
+    console.log(`✅ Updated version references in ${filePath}`);
+  } else {
+    console.log(`⚠️  No version references found to replace in ${filePath}`);
+  }
+}
+
+updateServiceFileVersion(serviceFilePathIvy, oldVersion, newVersion);
+updateServiceFileVersion(serviceFilePathVe, oldVersion, newVersion);
