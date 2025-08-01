@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const newVersion = "1.0.1"
+const newVersion = "1.0.2"
 
 if (!newVersion) {
   console.error('❌ Please provide a version number, e.g., node postinstall.js 1.0.2');
@@ -42,3 +42,20 @@ filesToUpdate.forEach((filePath) => {
     console.warn(`ℹ️ No "version" key found in ${filePath}`);
   }
 });
+
+// Update version badge in README.md
+const readmePath = path.resolve(__dirname, 'README.md');
+if (fs.existsSync(readmePath)) {
+  let readmeContent = fs.readFileSync(readmePath, 'utf8');
+
+  const badgeRegex = /(<img\s+alt="Release"\s+src="https:\/\/img\.shields\.io\/badge\/Release-)(v?[\d.]+)(-blueviolet\.svg")/;
+
+  if (badgeRegex.test(readmeContent)) {
+    const versionWithV = newVersion.startsWith('v') ? newVersion : 'v' + newVersion;
+    readmeContent = readmeContent.replace(badgeRegex, `$1${versionWithV}$3`);
+    fs.writeFileSync(readmePath, readmeContent);
+    console.log(`✅ Updated version badge in README.md`);
+  } else {
+    console.warn('⚠️ Version badge not found in README.md');
+  }
+}

@@ -1,16 +1,26 @@
 <h1 align="center">Welcome to Angular Nepali DatePicker Calendar 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-3.1.6-blue.svg?cacheSeconds=2592000" />
+  <img alt="Release" src="https://img.shields.io/badge/Release-v1.0.2-blueviolet.svg"
   <a href="https://github.com/rishov21/angular-nepali-datepicker/blob/master/README.md" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+    <img alt="Documentation" src="https://img.shields.io/badge/Documentation-Available-orange.svg" />
   </a>
   <a href="https://github.com/rishov21/angular-nepali-datepicker/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained-Yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/rishov21/angular-nepali-datepicker/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/rishov21/Nepali DatePicker Calendar" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-gold.svg" />
+  </a>
+  <a href="https://www.buymeacoffee.com/rishovthapa" target="_blank">
+    <img src="https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-ffb347.svg?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
+  </a>
+  <a href="https://www.linkedin.com/in/rishov-thapa/" target="_blank">
+    <img alt="LinkedIn: rishovthapa" src="https://img.shields.io/badge/LinkedIn-Rishov%20Thapa-0077B5?logo=linkedin&style=flat" />
+  </a>
+  <a href="https://www.npmjs.com/package/@rishovt/angular-nepali-datepicker" target="_blank">
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dt/@rishovt/angular-nepali-datepicker.svg?color=crimson&logo=npm" />
   </a>
 </p>
+
 
 > A lightweight, customizable Angular wrapper, build around JS with support for Unicode-rendered Nepali dates for both Reactive Forms and ngModel and flexible date formats. Ideal for forms requiring calendar-based Nepali inputs as well as AD-BS and BS-AD conversions. ( [DEMO]() )
 
@@ -33,6 +43,8 @@ Make sure the following are available in your project:
 - tslib
   
 These are usually already installed in any standard Angular app.
+
+### ✨ Features
 
 <a href="https://yourwebsite.com/docs#props" style="color:#007acc;font-weight:bold;font-size:16px;" target="_blank">
     🌐 View Documentation
@@ -132,13 +144,23 @@ private setDate(dateId: string, date: string) {
 }
 ```
 
-## Author
+## 🙋‍♂️ About the Author
 
-👤 **Rishov Thapa Chhetri <rishov096@gmail.com>**
+Made with ❤️ by [Rishov Thapa](https://www.linkedin.com/in/rishovthapa/)<br>
+I'm a passionate developer focused on building clean, efficient, and practical tools for real-world projects.  
+If you find this package helpful, feel free to:
 
-* Website: rishovthapa.com.np
-* Github: [@rishov21](https://github.com/rishov21)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/rishov-thapa](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/rishov-thapa)
+- ⭐ Star the repo to show support
+- 🤝 Connect with me on [LinkedIn](https://www.linkedin.com/in/rishov-thapa/)
+- 🧑‍💻 Follow me on [GitHub](https://github.com/rishov21)
+- ☕ [Buy me a coffee](https://www.buymeacoffee.com/rishovthapa) if you’d like to support future development
+
+<p align="left">
+  <a href="https://www.buymeacoffee.com/rishovthapa" target="_blank">
+    <img src="https://img.shields.io/badge/☕-Buy%20me%20a%20coffee-ffdd00.svg?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
+  </a>
+</p>
+
 
 ## 🙏 Credits
 This library internally uses the JavaScript and CSS assets from [sajanm/nepali-date-picker](https://github.com/sajanm/nepali-date-picker).  
@@ -150,10 +172,6 @@ This project is not affiliated with or endorsed by the original authors of the `
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/rishov21/angular-nepali-datepicker/issues). You can also take a look at the [contributing guide](https://github.com/rishov21/angular-nepali-datepicker/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
