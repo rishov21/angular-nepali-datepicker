@@ -1,6 +1,6 @@
 {
   "name": "@rishovt/angular-nepali-datepicker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight Angular wrapper and fully customizable, non-typeable Nepali datepicker component for Angular with support for Unicode-rendered Nepali dates, BS↔AD conversion, and flexible date formats. Ideal for forms requiring calendar-based input with native Nepali script display.",
   "author": "Rishov Thapa Chhetri <rishov096@gmail.com>",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "build:ve": "ng build angular-nepali-datepicker-ve",
     "build:ivy": "ng build angular-nepali-datepicker",
     "copy:postinstall": "node copy-postinstall.js",
-    "build:all": "npm run bump:version && npm run build:ve --no-cache && npm run build:ivy --no-cache && npm run copy:postinstall --no-cache",
+    "build:all": "npm run build:ve --no-cache && npm run build:ivy --no-cache && npm run copy:postinstall --no-cache",
     "test": "ng test",
     "prepublishOnly": "npm run build:all",
     "postinstall": "node dist/angular-nepali-datepicker/postinstall.js"
@@ -50,6 +50,10 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
+    "@angular/common": "~12.2.17",
+    "@angular/compiler": "~12.2.17",
+    "@angular/core": "~12.2.17",
+    "@angular/forms": "~12.2.17",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

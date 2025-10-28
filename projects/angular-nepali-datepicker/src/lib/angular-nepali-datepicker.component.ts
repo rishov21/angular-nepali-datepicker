@@ -62,7 +62,7 @@ export class RtcNepaliDatepickerComponent implements AfterViewInit, OnInit {
         maxDate: currentDate,
         disabled: false,
         unicodeDate: true,
-        language: 'nepali',
+        language: 'nepali'
       };
     })
   }

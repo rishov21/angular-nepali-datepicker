@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Angular Nepali DatePicker Calendar 👋</h1>
 <p>
-  <img alt="Release" src="https://img.shields.io/badge/Release-v1.0.3-blueviolet.svg"
-  <a href="https://github.com/rishov21/angular-nepali-datepicker/blob/master/README.md" target="_blank">
+  <img alt="Release" src="https://img.shields.io/badge/Release-v1.0.4-blueviolet.svg"
+  <a href="https://rishov21.github.io/#/documentation" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/Documentation-Available-orange.svg" />
   </a>
   <a href="https://github.com/rishov21/angular-nepali-datepicker/graphs/commit-activity" target="_blank">
@@ -22,11 +22,11 @@
 </p>
 
 
-> A lightweight, customizable Angular wrapper, build around JS with support for Unicode-rendered Nepali dates for both Reactive Forms and ngModel and flexible date formats. Ideal for forms requiring calendar-based Nepali inputs as well as AD-BS and BS-AD conversions. ( [DEMO]() )
+> A lightweight, customizable Angular wrapper, build around JS with support for Unicode-rendered Nepali dates for both Reactive Forms and ngModel and flexible date formats. Ideal for forms requiring calendar-based Nepali inputs as well as AD-BS and BS-AD conversions. ( [DEMO](https://rishov21.github.io/#/home) )
 
 ![alt text](image.png)
 
-### 🏠 [Homepage](https://www.npmjs.com/package/@rishovt/angular-nepali-datepicker)
+### 🏠 [Homepage](https://rishov21.github.io/#/home)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▶️ [Live Demo](https://rishov21.github.io/#/home)
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ These are usually already installed in any standard Angular app.
 - 📱 Responsive & Lightweight: Optimized for performance and mobile-friendly design with Dark mode support
 - 🔧 Well-Maintained: Regular updates and active support to keep your app running smoothly.
 
-<a href="https://yourwebsite.com/docs#props" style="color:#007acc;font-weight:bold;font-size:16px;" target="_blank">
+<a href="https://rishov21.github.io/#/documentation" style="color:#007acc;font-weight:bold;font-size:16px;" target="_blank">
     🌐 View Documentation
 </a>
 
@@ -126,7 +126,7 @@ onDateSelect(event : DateObject) {
     console.log('Selected Date Object:', this.selectedDate);
 }
 ```
- <a href="https://yourwebsite.com/docs#props" style="color:#007acc;font-weight:bold;" target="_blank">
+ <a href="https://rishov21.github.io/#/supported-options" style="color:#007acc;font-weight:bold;" target="_blank">
     🔗 Click here for full list of available options → <br>
     🌐 Visit the main website for examples
 </a><br><br>
